@@ -1,0 +1,95 @@
+/* Estilos generales del body: fuente, fondo y centrado */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #c9d6ff, #e2e2e2);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor principal con sombra y animación */
+.container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Animación de aparición suave */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos del input de nombre */
+input {
+    padding: 12px;
+    width: 80%;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Contenedor de botones con separación y alineación */
+.botones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilos de los botones con efecto hover */
+button {
+    padding: 10px 20px;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #005bd1;
+}
+
+/* Estilo del texto del saludo */
+#saludo {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #0070f3;
+}
+
+/* Estilo del historial */
+#historial-container {
+    margin-top: 30px;
+    text-align: left;
+}
+
+#historial {
+    list-style: none;
+    padding: 0;
+}
+
+#historial li {
+    background-color: #f0f0f0;
+    padding: 8px;
+    margin-bottom: 5px;
+    border-radius: 6px;
+}

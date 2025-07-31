@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Establecemos codificación y adaptabilidad para móviles -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saludo Inteligente con Historial</title>
+    <!-- Vinculamos hoja de estilos externa -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- Título principal de la aplicación -->
+        <h1>👋 Bienvenido a mi App SaaS</h1>
+        <p>Ingresa tu nombre para recibir un saludo personalizado según la hora del día:</p>
+
+        <!-- Input para ingresar el nombre -->
+        <input type="text" id="nombre" placeholder="Tu nombre" />
+
+        <!-- Botones para saludar, limpiar o borrar historial -->
+        <div class="botones">
+            <button onclick="saludar()">Saludar</button>
+            <button onclick="limpiar()">Limpiar</button>
+            <button onclick="borrarHistorial()">Borrar Historial</button>
+        </div>
+
+        <!-- Aquí se mostrará el saludo generado -->
+        <p id="saludo"></p>
+
+        <!-- Contenedor para mostrar historial de saludos -->
+        <div id="historial-container">
+            <h3>📜 Historial de saludos:</h3>
+            <ul id="historial"></ul>
+        </div>
+    </div>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
